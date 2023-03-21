@@ -1,0 +1,136 @@
+Html,
+body {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  background-color: #fafafa;
+  margin: 25px;
+}
+
+.container {
+  background-color: #fff;
+  width: auto;
+  height: auto;
+  padding: 30px;
+  border: 1px solid #eeeeee;
+}
+
+.titleText {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/*******slide-css******/
+
+.slide-toggle {
+  display: none;
+}
+
+.slidemenu {
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  margin: 50px 0px 30px;
+}
+
+.slidemenu label {
+  width: 50%;
+  display: block;
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.slidemenu label:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.slidemenu .slide-toggle:checked + label {
+  border-bottom: 3px solid #e70b89;
+  font-weight: 700;
+}
+
+.form-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.input {
+  height: 43px;
+  width: auto;
+  border-radius: 42px;
+  border: 1px solid;
+  font-size: 15px;
+  padding: 1px 19px;
+  margin: 14px 51px;
+}
+.btnLogin {
+  height: 43px;
+  width: 72%;
+  border-radius: 42px;
+  border: none;
+  font-size: 17px;
+  padding: 1px 19px;
+  margin: 14px 51px;
+  color: white;
+  font-weight: 600;
+  background-color: #e70b89;
+}
+
+.forgotPass {
+  text-align: right;
+  color: #e70b89;
+  font-weight: 500;
+  margin-right: 66px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.label-txt {
+  color: #a4a4a4;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+}
+.links > img {
+  margin: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+}
+
+.signup-link {
+  text-align: center;
+}
+
+.signup-link p {
+  font-size: 12px;
+}
+.signup-link a {
+  color: #e70b89;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    background-color: black;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .container {
+    width: 250px;
+  }
+}
